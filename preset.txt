@@ -1,0 +1,116 @@
+ch+ D:  IR code A05F received, but not found in preferences!  Timing 548/1704
+ch- D:  IR code 40BF received. Will execute upvolume = 2
+vol+ D: IR code 7887 received, but not found in preferences!  Timing 557/1708
+vol- D: IR code 50AF received, but not found in preferences!  Timing 556/1703
+
+mute D: IR code 6897 received, but not found in preferences!  Timing 531/1736
+
+0   D: IR code 48B7 received, but not found in preferences!  Timing 550/1704
+1   D: IR code 906F received, but not found in preferences!  Timing 542/1719
+2   D: IR code B847 received, but not found in preferences!  Timing 549/1714
+3   D: IR code F807 received, but not found in preferences!  Timing 541/1717
+4   D: IR code B04F received, but not found in preferences!  Timing 544/1717
+5   D: IR code 9867 received, but not found in preferences!  Timing 545/1720
+6   D: IR code D827 received, but not found in preferences!  Timing 539/1708
+7   D: IR code 8877 received, but not found in preferences!  Timing 544/1704
+8   D: IR code A857 received, but not found in preferences!  Timing 533/1725
+9   D: IR code E817 received, but not found in preferences!  Timing 535/1715
+
+
+
+
+
+
+clk_dst = 1                                          # Offset during daylight saving time (hours)
+clk_offset = 1                                       # Offset with respect to UTC in hours
+clk_server = pool.ntp.org                            # Time server to be used
+#
+gpio_00 = uppreset = 1
+gpio_12 = upvolume = 2
+gpio_13 = downvolume = 2
+gpio_14 = stop
+gpio_17 = resume
+gpio_34 = station = bytefm.cast.addradio.de/bytefm/main/mid/stream
+#
+ir_6897 = mute
+ir_7887 = upvolume = 5
+ir_50AF = downvolume = 5
+ir_A05F = uppreset = 1
+ir_40BF = downpreset = 1
+ir_48B7 = preset = 0
+ir_906F = preset = 2
+ir_B847 = preset = 5
+ir_F807 = preset = 8
+ir_B04F = preset = 11
+ir_9867 = preset = 14
+ir_D827 = preset = 17
+ir_8877 = preset = 20
+ir_A857 = preset = 23
+ir_E817 = preset = 26
+#
+lstmods = Fri, 12 Nov 2021 10:46:40 GMT
+#
+mqqprefix = none
+mqttbroker = none
+mqttpasswd = *******
+mqttport = 1883
+mqttuser = none
+#
+pin_enc_clk = 26                                     # GPIO Pin number for rotary encoder "CLK"
+pin_enc_dt = 25                                      # GPIO Pin number for rotary encoder "DT"
+pin_enc_sw = 27                                      # GPIO Pin number for rotary encoder "SW"
+pin_ir = 35                                          # GPIO Pin number for IR receiver VS1838B
+pin_sd_cs = 21                                       # GPIO Pin number for SD card "CS"
+pin_tft_scl = 13                                     # GPIO Pin number for TFT "DC"
+pin_tft_sda = 14                                     # GPIO Pin number for TFT "CS"
+pin_vs_cs = 5                                        # GPIO Pin number for VS1053 "CS"
+pin_vs_dcs = 32                                      # GPIO Pin number for VS1053 "DCS"
+pin_vs_dreq = 4                                      # GPIO Pin number for VS1053 "DREQ"
+#
+preset = 0
+preset_00 = bytefm.cast.addradio.de/bytefm/main/mid/stream #0 - ByteFM
+preset_01 = listen2.ntslive.co.uk/stream #  1 - NTS1
+preset_02 = stream-relay-eu.ntslive.net/stream2              #  2 - NTS2
+preset_03 = st01.dlf.de/dlf/01/128/mp3/stream.mp3 #  3 - DLF
+preset_04 = icecast.ndr.de/ndr/ndrinfo/hamburg/mp3/128/stream.mp3 #4 - NDR INFO
+preset_05 = st02.sslstream.dlf.de/dlf/02/high/aac/stream.aac  #  5 - DLF Kultur
+preset_06 = icecast.ndr.de/ndr/ndrkultur/live/mp3/128/stream.mp3  # 6 - NDR Kultur
+preset_07 = server1.usatelk.com:27547/stream           #  7 - UNAM fm
+preset_08 = wkcr.streamguys1.com:80/live                    #  8 - WKCR
+preset_09 = wwoz-sc.streamguys1.com/wwoz-hi.mp3                #  9 - WWOZ
+preset_10 = stream.wksu.org/wksu1.128.mp3                      # 10 - WKSU
+preset_11 = stream0.wfmu.org/freeform-128k                        # 11 - WFMU
+preset_12 = edg-ams-kcrw.streamguys1.com/kcrw_128k_mp3_berlin       # 12 - KCRW Berlin
+preset_13 = kcrw.streamguys1.com/kcrw_192k_mp3_on_air_internet_radio    # 13 - KCRW
+preset_14 = classicoims.out.airtime.pro:8000/dublab_a               # 14 - Dublab
+preset_15 = dublabde.out.airtime.pro:8000/dublabde_a                  # 15 - Dublab DE
+preset_16 = 87.118.122.220:8002/stream      # 16 - Reboot FM
+preset_17 = thfradio2.out.airtime.pro:8000/thfradio2_a   # 17 - THF Radio
+preset_18 = stream.fsk-hh.org:8000/fsk.mp3              # 18 - FSK HH
+preset_19 = orf-live.ors-shoutcast.at/fm4-q2a      # 19 - FM4
+preset_20 = stream.live.vc.bbcmedia.co.uk/bbc_radio_one # 20 - BBC one
+preset_21 = stream.live.vc.bbcmedia.co.uk/bbc_1xtra # 21 - BBC 1Xtra
+preset_22 = stream.live.vc.bbcmedia.co.uk/bbc_radio_three # 22 - BBC three
+preset_23 = stream.live.vc.bbcmedia.co.uk/bbc_radio_fourfm # 23 - BBC four
+preset_24 = dispatcher.rndfnk.com/rbb/inforadio/live/mp3/mid # 24 - RBB info
+preset_25 = streams.fluxfm.de/live/mp3-128/audio/ # 25 - Flux FM
+preset_26 = www.radioeins.de/livemp3 # 26 - Radio1
+preset_27 = icecast.ndr.de/ndr/ndrblue/live/mp3/128/stream.mp3 # 27 NDR Blue
+#
+toneha = 0
+tonehf = 0
+tonela = 0
+tonelf = 0
+#
+volume = 77
+#
+
+wifi_00 = Wlan84/DieOkersSindAmOckern1!1Elf!
+
+wifi_01 = WIN-5C69/*******
+wifi_02 = Megaman/*******
+
+
+
+
+
