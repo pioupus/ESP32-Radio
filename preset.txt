@@ -32,21 +32,21 @@ gpio_14 = stop
 gpio_17 = resume
 gpio_34 = station = bytefm.cast.addradio.de/bytefm/main/mid/stream
 #
-ir_6897 = mute
-ir_7887 = upvolume = 5
-ir_50AF = downvolume = 5
-ir_A05F = uppreset = 1
 ir_40BF = downpreset = 1
 ir_48B7 = preset = 0
-ir_906F = preset = 2
-ir_B847 = preset = 5
-ir_F807 = preset = 8
-ir_B04F = preset = 11
-ir_9867 = preset = 14
-ir_D827 = preset = 17
+ir_50AF = downvolume = 5
+ir_6897 = mute
+ir_7887 = upvolume = 5
 ir_8877 = preset = 20
+ir_906F = preset = 2
+ir_9867 = preset = 14
+ir_A05F = uppreset = 1
 ir_A857 = preset = 23
+ir_B04F = preset = 11
+ir_B847 = preset = 5
+ir_D827 = preset = 17
 ir_E817 = preset = 26
+ir_F807 = preset = 8
 #
 lstmods = Fri, 12 Nov 2021 10:46:40 GMT
 #
@@ -61,13 +61,13 @@ pin_enc_dt = 25                                      # GPIO Pin number for rotar
 pin_enc_sw = 27                                      # GPIO Pin number for rotary encoder "SW"
 pin_ir = 35                                          # GPIO Pin number for IR receiver VS1838B
 pin_sd_cs = 21                                       # GPIO Pin number for SD card "CS"
-pin_tft_scl = 13                                     # GPIO Pin number for TFT "DC"
-pin_tft_sda = 14                                     # GPIO Pin number for TFT "CS"
+pin_tft_scl = 13                                       # GPIO Pin number for TFT "DC"
+pin_tft_sda = 14                                      # GPIO Pin number for TFT "CS"
 pin_vs_cs = 5                                        # GPIO Pin number for VS1053 "CS"
 pin_vs_dcs = 32                                      # GPIO Pin number for VS1053 "DCS"
 pin_vs_dreq = 4                                      # GPIO Pin number for VS1053 "DREQ"
 #
-preset = 0
+preset = 28
 preset_00 = bytefm.cast.addradio.de/bytefm/main/mid/stream #0 - ByteFM
 preset_01 = listen2.ntslive.co.uk/stream #  1 - NTS1
 preset_02 = stream-relay-eu.ntslive.net/stream2              #  2 - NTS2
@@ -95,7 +95,8 @@ preset_23 = stream.live.vc.bbcmedia.co.uk/bbc_radio_fourfm # 23 - BBC four
 preset_24 = dispatcher.rndfnk.com/rbb/inforadio/live/mp3/mid # 24 - RBB info
 preset_25 = streams.fluxfm.de/live/mp3-128/audio/ # 25 - Flux FM
 preset_26 = www.radioeins.de/livemp3 # 26 - Radio1
-preset_27 = icecast.ndr.de/ndr/ndrblue/live/mp3/128/stream.mp3 # 27 NDR Blue
+preset_27 = icecast.ndr.de/ndr/ndrblue/live/mp3/128/stream.mp3 # 27 - NDR Blue
+preset_28 = icecast.ndr.de/ndr/njoy/live/mp3/128/stream.mp3 # 28 - N-Joy
 #
 toneha = 0
 tonehf = 0
