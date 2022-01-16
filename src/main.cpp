@@ -178,8 +178,8 @@
 //#define CH376                          // For CXH376 support (reading files from USB stick)
 //#define SDCARD                         // For SD card support (reading files from SD card)
 // Define (just one) type of display.  See documentation.
-#define BLUETFT                        // Works also for RED TFT 128x160
-//#define OLED1306                     // 64x128 I2C OLED SSD1306
+//#define BLUETFT                        // Works also for RED TFT 128x160
+#define OLED1306                     // 64x128 I2C OLED SSD1306
 //#define OLED1309                     // 64x128 I2C OLED SSD1309
 //#define OLED1106                     // 64x128 I2C OLED SH1106
 //#define DUMMYTFT                     // Dummy display
